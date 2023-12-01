@@ -1,0 +1,117 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #333333;
+  background-color: #fafafa;
+  line-height: 1.6;
+}
+
+.form-control {
+  border: 1px solid #dddddd;
+  padding: 12px 20px;
+  font-size: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #5b9bd5;
+  box-shadow: 0 0 8px rgba(91, 155, 213, 0.25);
+}
+
+label {
+  font-weight: 600;
+  color: #555555;
+}
+
+.btn-primary {
+  background-color: #5b9bd5;
+  border-color: #5b9bd5;
+  color: #ffffff;
+  padding: 10px 25px;
+  border-radius: 30px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+  background-color: #4a8cc7;
+  border-color: #4a8cc7;
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+  background-color: #5b9bd5;
+  border-color: #5b9bd5;
+}
+
+hr {
+  border-top: 1px solid #eeeeee;
+}
+
+@media (max-width: 768px) {
+  .form-control {
+      padding: 10px 15px;
+      font-size: 14px;
+  }
+
+  .btn-primary {
+      padding: 8px 20px;
+      font-size: 15px;
+  }
+}
+
+
+.custom-select {
+  display: block;
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #ffffff;
+  background-clip: padding-box;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.custom-select:focus {
+  border-color: #5b9bd5;
+  outline: 0;
+  box-shadow: 0 0 8px rgba(91, 155, 213, 0.25);
+}
+
+/* Style pour la validation des champs */
+.invalid-feedback {
+  width: 100%;
+  margin-top: .25rem;
+  font-size: 80%;
+  color: #dc3545;
+}
+
+/* Style cohérent pour les champs de saisie */
+
+/* Adaptations pour les écrans plus petits */
+@media (max-width: 768px) {
+  .custom-select {
+      font-size: 14px;
+      padding: 10px 15px;
+  }
+}
+
+.loading {
+  border: 5px solid #f3f3f3; /* Couleur de fond */
+  border-top: 5px solid #3498db; /* Couleur de la bordure supérieure */
+  border-radius: 50%; /* Rend le loader circulaire */
+  width: 40px; /* Largeur du loader */
+  height: 40px; /* Hauteur du loader */
+  animation: spin 0.5s linear infinite; /* Animation nommée spin */
+}
+
+/* Animation keyframes pour spin */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
